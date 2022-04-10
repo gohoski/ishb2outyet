@@ -1,4 +1,4 @@
-document.on('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const resp = await fetch('http://raptisoft.net/go.php?exe=Gm8YDmFuC1MLHHQcEAQHR2wIEREcERYBaQVTpxoZD0cJDgMJEBBPRUUTFAUNX1VUFwkXCgodDAJIMVhcWVtfMTYaR0tVDSFdKFEDMAIxCzYDAytEUyopXjw%3d%3d'); // Hamsterball 2 News URL
   const news = await resp.text();
   const title = document.querySelector('div.title');
