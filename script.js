@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const progress = document.querySelector('progress');
   progress.style.display = 'none';
   title.style.display = 'block';
-  if (news.includes('fopen(hamsterball2.news): failed to open stream'))
-    title.innerText = 'NO';
-  else
+  if (!news.includes('fopen(hamsterball2.news): failed to open stream'))
     title.innerText = 'YES';
 })
